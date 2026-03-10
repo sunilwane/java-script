@@ -4,7 +4,7 @@ const printAddress = (userName,password) =>{
     console.log(this.name," ", this.lastname, " ",userName,password);
 }
 
-function printAddress(userName,password){
+function printAddress1(userName,password){
     console.log(this.name," ", this.lastname, " ",userName,password);
     
 }
@@ -13,4 +13,5 @@ const name = {
     lastname: "Doe"
 }
 
-printAddress.call(name,"john123","abcd1234")
+printAddress.call(name,"john123","abcd1234");
+printAddress1.call(name,"john123","abcd1234")
